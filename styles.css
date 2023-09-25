@@ -6,28 +6,95 @@ body, h1, h2, h3, p {
 
 /* Set a background color and font for the entire page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F1DE; /* Pastel yellow background */
     color: #333;
 }
 
-/* Style the header section */
-header {
-    background-color: #333;
-    color: #fff;
+/* Style the navigation bar */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #6D6875; /* Pastel purple navigation bar */
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-weight: bold;
+}
+
+/* Style the hero section */
+#hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 20px;
+    padding: 100px 0;
+    color: #FEAA80;
 }
 
-header h1 {
-    font-size: 2.5rem;
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-header p {
+#hero p {
     font-size: 1.2rem;
 }
 
 /* Style the main content sections */
-section {
-    padding: 20px;
+.container {
+    padding: 40px;
+    margin: 20px auto;
+    background-color: #FEAA80; /* Pastel orange background for content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+/* Style the portfolio project divs */
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Style the contact section */
+#contact {
+    background-color: #F6F6F6; /* Light gray background for contact section */
+    text-align: center;
+    padding: 30px;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #A8DADC; /* Pastel blue footer background */
+    color: #fff; /* White text in footer */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Add more styles as needed */
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    /* Add responsive styles for smaller screens here */
 }
